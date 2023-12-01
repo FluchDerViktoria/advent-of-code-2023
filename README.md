@@ -1,4 +1,6 @@
 # advent-of-code-2023
 Repository für Advent of Code 2023
 
-In diesem Repository werden die Lösungen zu https://adventofcode.com/ hochgeladen mit jeweils einem Tag Verzug (teilweise sogar mehr). Mit anderen Worten, am Tag 2 wird Tag 1 hochgeladen, am Tag 3 Tag 2 etc. 
+In diesem Repository werden meine persönlichen Lösungen zu https://adventofcode.com/ hochgeladen.
+
+Disclaimer: Diese Lösungen sind aller Wahrscheinlichkeit nicht die hübschesten ihrer Art. Ist es mir aber relativ egal? Na klar ^^

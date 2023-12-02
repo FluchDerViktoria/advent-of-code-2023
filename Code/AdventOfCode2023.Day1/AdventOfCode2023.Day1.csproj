@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="XCOPY &quot;$(SolutionDir)..\Input\*.txt&quot; &quot;$(TargetDir)Input&quot; /I /Y" />
+    <Exec Command="IF EXIST &quot;$(TargetDir)Input\&quot; DEL &quot;$(TargetDir)Input\*&quot; /Q&#xD;&#xA;XCOPY &quot;$(SolutionDir)..\Input\*.txt&quot; &quot;$(TargetDir)Input&quot; /I /Y" />
   </Target>
 
 </Project>

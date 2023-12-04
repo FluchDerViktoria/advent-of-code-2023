@@ -17,10 +17,11 @@
   <ItemGroup>
     <ProjectReference Include="..\AdventOfCode2023.Day2\AdventOfCode2023.Day2.csproj" />
     <ProjectReference Include="..\AdventOfCode2023.Day3\AdventOfCode2023.Day3.csproj" />
+    <ProjectReference Include="..\AdventOfCode2023.Day4\AdventOfCode2023.Day4.csproj" />
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="XCOPY &quot;$(SolutionDir)..\Input\Example\*.txt&quot; &quot;$(TargetDir)ExampleInput&quot; /I /Y" />
+    <Exec Command="XCOPY &quot;$(SolutionDir)..\Input\*.txt&quot; &quot;$(TargetDir)\Input\&quot; /I /Y&#xD;&#xA;XCOPY &quot;$(SolutionDir)..\Input\Example\*.txt&quot; &quot;$(TargetDir)\Input\Example\&quot; /I /Y" />
   </Target>
 
 </Project>

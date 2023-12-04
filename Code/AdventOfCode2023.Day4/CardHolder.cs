@@ -29,19 +29,19 @@ namespace AdventOfCode2023.Day4
       // Berechnen und "Kopieren" der nächsten Lose
       for (int i = amountOfCards.Keys.Min(); i <= amountOfCards.Keys.Max(); i++)
       {
+        // Los aus ID ermitteln
+        Card card = Cards.FirstOrDefault(c => c.ID == i);
+
+        // Null-Check
+        if (card == null)
+          continue;
+
+        // Berechnen der Treffer
+        int hits = card.GetHits();
+
         // Wiederhole so oft, wie es Lose gibt
         for (int j = 0; j < amountOfCards[i]; j++)
         {
-          // Los aus ID ermitteln
-          Card card = Cards.FirstOrDefault(c => c.ID == i);
-
-          // Null-Check
-          if (card == null)
-            continue;
-
-          // Berechnen der Treffer
-          int hits = card.GetHits();
-
           // "Kopieren"
           AddAmountToCards(i, hits, amountOfCards);
         }

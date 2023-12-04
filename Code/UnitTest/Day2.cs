@@ -16,7 +16,7 @@ namespace UnitTest
       // Erwartete Antwort
       int expected = 8;
 
-      List<Game> games = Game.LoadGamesFromFile(@"ExampleInput\day-02.txt");
+      List<Game> games = Game.LoadGamesFromFile(@"Input\Example\day-02.txt");
 
       int sumOfValidId = 0;
 
@@ -35,7 +35,7 @@ namespace UnitTest
       // Erwartete Antwort
       int expected = 2286;
 
-      List<Game> games = Game.LoadGamesFromFile(@"ExampleInput\day-02.txt");
+      List<Game> games = Game.LoadGamesFromFile(@"Input\Example\day-02.txt");
 
       int sumOfPower = 0;
 

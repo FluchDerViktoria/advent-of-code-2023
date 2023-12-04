@@ -17,7 +17,7 @@ namespace UnitTest
       int expected = 4361;
 
       // Setup Engine
-      EngineSchematic engineSchematic = new EngineSchematic(@"ExampleInput\day-03.txt");
+      EngineSchematic engineSchematic = new EngineSchematic(@"Input\Example\day-03.txt");
 
       // Summe aus Part Numbers
       int sumOfPartNumbers = engineSchematic.GetAllPartNumbers().Sum();
@@ -32,7 +32,7 @@ namespace UnitTest
       int expected = 467835;
 
       // Setup Engine
-      EngineSchematic engineSchematic = new EngineSchematic(@"ExampleInput\day-03.txt");
+      EngineSchematic engineSchematic = new EngineSchematic(@"Input\Example\day-03.txt");
 
       // Summe
       int sumOfGearRatio = engineSchematic.GetAllGearRatios().Sum();
